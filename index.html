@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-relaxed text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 fixed w-full z-10">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      
+
+      <ul class="flex space-x-4">
+        <li><a href="home.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="projects.html" class="hover:underline">Projects</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="pt-24 min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center px-4">
+    <img src="hii.jpg" alt="Profile" class="w-32 h-32 rounded-full mb-4 border-4 border-blue-600" />
+    <h2 class="text-3xl font-semibold">Hi, I'm Priyanshu Patel</h2>
+    <p class="text-lg text-gray-700 mt-2">Web Developer & Designer</p>
+    <p class="italic mt-4">"Building ideas into beautiful websites!"</p>
+     <a href="resume.pdf" download class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Download Resume
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">About Me</h2>
+      <p class="mb-4">
+        I'm a passionate web developer with experience in HTML, CSS, and JavaScript.
+        I love turning complex problems into simple, beautiful, and intuitive designs.
+        I'm currently focused on mastering front-end development with frameworks like Tailwind CSS.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <!-- Skills -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Skills</h3>
+          <ul class="list-disc list-inside">
+            <li>HTML5</li>
+            <li>CSS3 / Tailwind CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <!-- Education -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Education</h3>
+          <ul class="list-disc list-inside">
+            <li>B.Tech - LJ Univrsity</li>
+            <li>Web Development Bootcamp - DevTown</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project Card 1 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="project1.jpg" alt="Project 1" class="mb-4 rounded" />
+          <h3 class="text-lg font-semibold">Portfolio Website</h3>
+          <p class="text-sm">Built using HTML and Tailwind CSS.</p>
+          
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="project2.jpg" alt="Project 2" class="mb-4 rounded" />
+          <h3 class="text-lg font-semibold">Medical system</h3>
+          <p class="text-sm">
+  This platform helps patients connect with experienced doctors, schedule appointments, and access medical services with ease.
+</p>
+
+        
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="project3.jpg" alt="Project 3" class="mb-4 rounded" />
+          <h3 class="text-lg font-semibold">Blog Layout</h3>
+          <p class="text-sm">Responsive blog UI with Tailwind grid system.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white px-6">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-2 rounded" />
+        <input type="number" placeholder="Your Whatsapp Number" class="w-full border border-gray-300 p-2 rounded" />
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-2 rounded" />
+        <textarea rows="5" placeholder="Your Message" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+      </form>
+      <div class="text-center mt-6">
+        <p>Or connect with me:</p>
+        <div class="flex justify-center gap-4 mt-2">
+          <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+          <a href="#" class="text-gray-700 hover:text-black">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p>© 2025 Priyanshu Patel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
